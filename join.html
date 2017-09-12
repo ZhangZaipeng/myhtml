@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta content=" 环球名车是一个汽车综合性养护平台。便宜不少，服务更好，有车以后，就上环球名车。" name="description">
+    <title>环球名车加入我们</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/nav.css">
+    <link rel="stylesheet" href="static/css/join.css">
+    <script src="static/js/jquery-1.11.1.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/base-auto.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+<!--------------------------导航栏--------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-center">
+                    <li><a href="index.html"> 首页</a></li>
+                    <li><a href="service.html"> 汽车服务</a></li>
+                    <li><a href="store.html">网点店面</a></li>
+                    <li><a href="cooperation.html">商务合作</a></li>
+                    <li><a href="#"><img src="static/img/nav_phone.png" style=""> 4006-989-566</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--------------------------导航栏结束------------------------->
+<!--banner-->
+<div class="banner">
+</div>
+<!--内容区域-->
+<div class="content">
+    <h5>加入我们</h5>
+    <h6>Work with us</h6>
+    <div class="job_in clearfix">
+
+        </div>
+    </div>
+</div>
+<!--底部信息-->
+<div class="footer">
+    <div class="container footer_nav clearfix">
+        <ul class="clearfix">
+            <li><a href="our_company.html">关于环球名车</a></li>
+            <li><a href="join.html">加入我们</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="http://admin.jmhqmc.com/admin/login.htm" class="last" target="_blank">注册登录</a></li>
+        </ul>
+    </div>
+    <div class="container cooperation">
+        <div class="row">
+            <div class="col-md-1-5 col-xs-6 footer_icon">
+                <img src="static/img/footer_icon01.png">
+                <h5>大牌保险公司合作</h5>
+            </div>
+            <div class="col-md-1-5 col-xs-6 footer_icon">
+                <img src="static/img/footer_icon02.png">
+                <h5>实体店遍布全国</h5>
+
+            </div>
+            <div class="col-md-1-5 col-xs-6 footer_icon">
+                <img src="static/img/footer_icon03.png">
+                <h5>1小时快修服务</h5>
+
+            </div>
+            <div class="col-md-1-5 col-xs-6 footer_icon">
+                <img src="static/img/footer_icon04.png">
+                <h5>最划算的价格</h5>
+
+            </div>
+            <div class="col-md-1-5 col-xs-6 footer_icon">
+                <img src="static/img/footer_icon05.png">
+                <h5>7天无理由售后服务</h5>
+            </div>
+        </div>
+        <div class="index_erwei">
+            <img src="static/img/index_erwei.png">
+        </div>
+    </div>
+    <p class="beian">&copy;2017 jmhqmc.com 2013-2017 环球名车汽车服务湖北股份有限公司 鄂ICP备16008539号-2</p>
+
+</div>
+</body>
+<script>
+    $(function(){
+            $.ajax({
+            url: 'http://app.jmhqmc.com/api/recruitment.json',
+            type: "get",
+            async: false,
+            dataType: "jsonp",
+            jsonp: "callbackparam",
+            jsonpCallback: "recruitment_jsonpCallback",
+            success: function (json) {
+                for (var i = 0; i < 5; i++) {
+                    if(!(json.length >= (i+1))){return;}
+                    recruitment = json[i];
+                    
+                    var html = "        <div class=\"job\">\n" +
+                        "            <h5>"+recruitment.positions_job+"</h5>\n" +
+                        "            <div class=\"zhize\"><h6>岗位职责</h6>\n" +
+                        "            <p>"+recruitment.positions_duty+"</p></div>\n" +
+                        "           <div class=\"yq\"> <h6>职位要求</h6>\n" +
+                        "            <p>"+recruitment.positions_require+"</p></div>\n" +
+                        "            <a target=\"_blank\" href=\""+recruitment.positions_email+"\">立即申请</a>\n" +
+                        "        </div>";
+                    $(".job_in").append($(html))
+                }
+            },
+            error: function () {
+                alert('Error');
+            }
+        });
+        $(".collage_btn").click(function(){
+            $(this).addClass("current");
+            $(this).siblings(".collage_btn").removeClass("current");
+        })
+    })
+</script>
+</html>

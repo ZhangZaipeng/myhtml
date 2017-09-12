@@ -1,0 +1,140 @@
+
+/*通用样式结束*/
+body{
+background:#f8f8f8;
+}
+/*banner*/
+.banner{position:relative}
+.banner img{
+    display:block;
+    width:100%;
+
+}
+.growth_down{
+    width:41px;
+    position:absolute;
+    left:49%;
+    top:43%;
+}
+.passage{
+    padding-left: 100px;
+}
+.passage p{
+    font-size: 18px;
+    color:#222;
+}
+.passage_bg{
+    margin:-50px auto 0 auto;
+    width:1000px;
+}
+.passage_bg img{
+    display: block;
+    width:100%;
+    height:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*响应式*/
+
+
+@media screen and (max-width: 970px){
+    /*.navbar-header{*/
+        /*background:rgba(34,34,34,0.4);*/
+
+    /*}*/
+    /*.nav{*/
+        /*margin-left:0;*/
+        /*background:rgba(34,34,34,0.8);*/
+        /*border-radius:1px;*/
+        /*margin-top:-0.1rem;*/
+    /*}*/
+    /*.navbar-header{*/
+        /*background:rgba(34,34,34,0.4);*/
+
+    /*}*/
+    /*.navbar-collapse {*/
+        /*padding:0;*/
+        /*margin:0;*/
+    /*}*/
+    /*.navbar-nav>li:nth-child(5){*/
+        /*display: none;*/
+    /*}*/
+
+    /*.navbar-default .navbar-nav>li>a{*/
+        /*font-size: 0.36rem;*/
+        /*color:#fff;*/
+        /*line-height: 1.5rem;*/
+        /*text-align: left;*/
+        /*margin-left:0.5rem;*/
+    /*}*/
+    /*.navbar-default .navbar-nav>.active>a{*/
+        /*font-size: 0.45rem;*/
+        /*color:#fff;*/
+        /*background:none;*/
+        /*line-height: 1.5rem;*/
+        /*text-align: left;*/
+        /*margin-left:0.5rem;*/
+
+    /*}*/
+    /*底部区域调整*/
+    .footer_nav ul li{
+        margin-left:0.1rem;
+    }
+    .footer_nav ul li a{
+        font-size: 0.26rem;
+        line-height:0.22rem;
+        margin-left: 0.06rem;
+        color:#384364;
+    }
+    .footer_nav ul li .last{
+        color:#ff8a00;
+    }
+    .beian{
+        color:#384364;text-align: center;font-size: 0.12rem;line-height: 0.3rem;margin:0;
+    }
+    /*通用*/
+
+    .passage_bg {
+       display: none;
+    }
+    .passage p {
+        font-size: 0.24rem;
+        text-align: justify;
+        color: #222;
+    }
+    .passage b {
+       font-size: 0.42rem!important;
+    }
+    .passage {
+        padding:1.5rem 0.2rem 0.5rem 0.2rem;
+    }
+    /*底部部分通用样式*/
+    .footer_icon img {
+        width: 1.2rem;
+        height: 1.2rem;
+        display: block;
+        margin: 0 auto;
+    }
+    .cooperation {
+        margin-top: 0.5rem;
+    }
+    .index_erwei {
+        margin:0.5rem auto;
+    }
+    .footer{
+        padding-top:0.25rem;
+    }
+    .footer_icon{
+        display: none;
+    }
+}

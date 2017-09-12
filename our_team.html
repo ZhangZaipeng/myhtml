@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta content=" 环球名车是一个汽车综合性养护平台。便宜不少，服务更好，有车以后，就上环球名车。" name="description">
+    <title>环球名车我们的团队</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/nav.css">
+    <link rel="stylesheet" href="static/css/our_team.css">
+    <script src="static/js/jquery-1.11.1.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/base-auto.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+<!--------------------------导航栏--------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-center">
+                    <li><a href="index.html"> 首页</a></li>
+                    <li><a href="service.html"> 汽车服务</a></li>
+                    <li><a href="store.html">网点店面</a></li>
+                    <li><a href="cooperation.html">商务合作</a></li>
+                    <li><a href="#"><img src="static/img/nav_phone.png" style=""> 4006-989-566</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--------------------------导航栏结束------------------------->
+<div class="banner">
+    <img src="static/img/our_team.png">
+    <a href="#passage" class="growth_down"><img src="static/img/team_down.png"></a>
+</div>
+<div class="content container">
+    <p id="passage">  <b>环球名车，</b>一个年轻富有激情的团队，专注于汽车后市场，以标准化的流程和“真心服务”
+        的理念，改变传统养车模式，引领汽车服务发展新潮流。</p>
+    <div class="team_bg">
+        <img src="static/img/team_bg.png">
+    </div>
+</div>
+
+<!--底部信息-->
+<div class="footer">
+    <div class="container footer_nav clearfix">
+        <ul class="clearfix">
+            <li><a href="our_company.html">关于环球名车</a> </li>
+            <li><a href="join.html">加入我们</a> </li>
+            <li><a href="contact.html">联系我们</a> </li>
+            <li><a href="http://admin.jmhqmc.com/admin/login.htm" class="last" target="_blank">注册登录</a> </li>
+        </ul>
+    </div>
+    <div class="container cooperation">
+        <div class="row">
+            <div class="col-md-1-5 col-xs-6 footer_icon">
+                <img src="static/img/footer_icon01.png">
+                <h5>大牌保险公司合作</h5>
+            </div>
+            <div class="col-md-1-5 col-xs-6 footer_icon">
+                <img src="static/img/footer_icon02.png">
+                <h5>实体店遍布全国</h5>
+
+            </div>
+            <div class="col-md-1-5 col-xs-6 footer_icon">
+                <img src="static/img/footer_icon03.png">
+                <h5>1小时快修服务</h5>
+
+            </div>
+            <div class="col-md-1-5 col-xs-6 footer_icon">
+                <img src="static/img/footer_icon04.png">
+                <h5>最划算的价格</h5>
+
+            </div>
+            <div class="col-md-1-5 col-xs-6 footer_icon">
+                <img src="static/img/footer_icon05.png">
+                <h5>7天无理由售后服务</h5>
+            </div>
+        </div>
+        <div class="index_erwei">
+            <img src="static/img/index_erwei.png">
+        </div>
+    </div>
+    <p class="beian">&copy;2017 jmhqmc.com 2013-2017 环球名车汽车服务湖北股份有限公司 鄂ICP备16008539号-2</p>
+
+</div>
+</body>
+<script>
+    $(function(){
+        $(".collage_btn").click(function(){
+            $(this).addClass("current");
+            $(this).siblings(".collage_btn").removeClass("current");
+        })
+    })
+</script>
+</html>

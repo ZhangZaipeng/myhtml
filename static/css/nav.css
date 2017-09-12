@@ -1,0 +1,198 @@
+/*通用部分*/
+/*五等分栅格*/
+/*栅格系统五等分*/
+/* define bootstrap 5 columns */
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-1-5 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+/*字体设置*/
+
+@font-face {
+    font-family: siyuan;
+    src: url('../fonts/SourceHanSansCN-Regular.otf');
+}
+*{font-family: siyuan;}
+/*导航样式调整*/
+.navbar-default{
+    background: none;
+    border: none;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    font-size: 26px;
+    color:#fff;
+    background:none;
+}
+.nav{
+    /*background:rgba(34,34,34,0.2);*/
+    border-radius: 44px ;
+    margin-left:70px;
+    background:-webkit-linear-gradient(to bottom,rgba(3,0,0,0.2),rgba(248,248,248,0.2));
+    background:linear-gradient(to bottom,rgba(3,0,0,0.2),rgba(248,248,248,0.2));
+    background:-moz-linear-gradient(to bottom,rgba(3,0,0,0.2),rgba(248,248,248,0.2));
+    -moz-box-shadow:0 3px 6px #e6e6e6; -webkit-box-shadow:0 3px 6px #e6e6e6; box-shadow:0 3px 6px #e6e6e6;
+    position: fixed;
+    top:0;
+}
+.navbar-fixed-top{
+    position:absolute;
+}
+.navbar-nav>li>a{
+    padding:0;
+    margin:0;
+    width:180px;
+    text-align: center;
+    line-height: 88px;
+}
+.navbar-nav>li:nth-child(5)>a{
+    color:#fff;
+    border-radius: 44px;
+    background:-webkit-linear-gradient(to bottom,#74d2fe,#6a97c9);
+    background:-moz-linear-gradient(to bottom,#74d2fe,#6a97c9);
+    background:linear-gradient(to bottom,#74d2fe,#6a97c9);
+    width:250px;
+}
+
+.navbar-default .navbar-nav>li>a,.navbar-default .navbar-nav>li>a:focus{
+    font-size: 20px;
+    color:#fff;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color:#fff;
+    /*font-size: 26px;*/
+}
+.navbar-nav>li:nth-child(5)>a:focus{
+    color:#fff;
+    border-radius: 44px;
+    background:-webkit-linear-gradient(to bottom,#74d2fe,#6a97c9);
+    background:-moz-linear-gradient(to bottom,#74d2fe,#6a97c9);
+    background:linear-gradient(to bottom,#74d2fe,#6a97c9);
+    width:250px;
+}
+.carousel-control.left{
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0001) 100%);
+}
+.carousel-control.right{
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0001) 100%);
+}
+
+/*底部信息区域*/
+.footer{
+    background: #edf0f6;
+}
+.footer_nav ul{
+    float:right;
+    list-style: none;
+    margin:0;padding:0;
+}
+.footer_nav ul li{
+    float:left;
+    text-decoration: none;
+}
+.footer_nav ul li a{
+    font-size: 16px;
+    line-height: 60px;
+    margin-left: 50px;
+    color:#384364;
+}
+.footer_nav ul li .last{
+    color:#ff8a00;
+}
+.cooperation{
+    margin-top:80px;
+}
+.footer_icon img{
+    width:90px;
+    height: 90px;
+    display: block;
+    margin:0 auto
+}
+.footer_icon h5{
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+}
+/*底部二维码*/
+.index_erwei{margin-top:60px;margin-bottom:40px;}
+.index_erwei img{
+    display: block;
+    width:150px;
+    margin:0 auto;
+}
+.beian{
+    color:#384364;text-align: center;font-size: 14px;line-height: 30px;margin:0;
+}
+
+@media screen and (max-width: 767px){
+    .navbar-header{
+        background:rgba(34,34,34,0.4);
+
+    }
+    .nav{
+        margin-left:0;
+        background:rgba(34,34,34,0.8);
+        border-radius:1px;
+        margin-top:-0.1rem;
+        width:100%;
+        position: static;
+    }
+    .navbar-header{
+        background:rgba(34,34,34,0.4);
+
+    }
+    .navbar-collapse {
+        padding:0;
+        margin:0;
+    }
+
+
+    .navbar-default .navbar-nav>li>a{
+        font-size: 0.36rem;
+        color:#fff;
+        line-height: 1.5rem;
+        text-align: left;
+        margin-left:0.5rem;
+    }
+    .navbar-default .navbar-nav>.active>a{
+        font-size: 0.45rem;
+        color:#fff;
+        background:none;
+        line-height: 1.5rem;
+        text-align: left;
+        margin-left:0.5rem;
+
+    }
+    .navbar-nav>li:nth-child(5){
+        display: none;
+    }
+
+}

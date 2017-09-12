@@ -1,0 +1,520 @@
+
+
+/*通用样式结束*/
+body{
+background:#f8f8f8;
+}
+/*banner*/
+.banner{
+    height:599px;
+    background: url("../img/service_banner.png") no-repeat top center;
+    background-size: auto 100%;
+}
+
+/*内容区域*/
+.content{
+    width:1140px;
+    background:#fff;
+    padding-bottom:80px;
+    margin:-215px auto 100px auto;
+    position: relative;
+    padding-top:100px;
+
+}
+.content_in{display: none;}
+.content_in h5{
+    font-size: 42px;
+    color:#444;
+    text-align: center;
+    font-weight: 600;
+}
+
+.content_in h6{
+    font-size: 16px;
+    color:#888;
+    text-align: center;
+    margin-bottom:40px;
+}
+/*上门服务*/
+.shangmen_in{
+    width:817px;
+    margin:0 auto;
+}
+.shangmen_in p{
+    font-size: 20px;
+    line-height: 36px;
+    color:#444;
+}
+
+.shangmen_in span{
+    display: block;
+    width:125px;
+    text-align: center;
+    line-height: 36px;
+    color:#fff;
+    background: #71aef2;
+    border-radius: 35px;
+    margin: 45px auto;
+}
+.shangmen_in img{
+    display: block;
+    width:100%;height:auto;
+    margin-bottom: 135px;
+}
+.shangmen_in p b{
+    font-size: 38px;
+    color:#71aef2;
+    font-weight: bold;
+}
+
+/*自驾游*/
+.zijia{
+    width:800px;
+    margin:0 auto;
+}
+.zijia .row h5{
+    width:122px;
+    border-radius: 16px;
+    line-height: 32px;
+    color:#fff;
+    background:#71aef2;
+    font-size: 22px;
+    text-align: center;
+}
+
+.zijia .row p{
+    width:122px;
+    color:#444;
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+}
+.earth{
+    height:309px;
+    background: url("../img/earth.png") no-repeat right center;
+    padding-top:75px;
+    box-sizing: border-box;
+}
+.earth p{
+    font-size: 22px;
+    color:#222;
+}
+.zijia_bg{
+    margin-top:200px;
+}
+.zijia_bg img{
+    display: block;
+    width:100%;
+    height:auto;
+}
+
+/*会员特权*/
+.huiyuan{
+    display: block;
+}
+.huiyuan_in{
+    width:850px;
+    margin:0 auto;
+}
+.huiyuan_in h5{
+    font-size: 28px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #dddddd;
+    font-weight: bold;
+}
+.huiyuan_in .row div:nth-child(1) p{
+    text-align: center;
+    font-size: 18px;
+    color:#222;
+}
+.huiyuan_in .row div:nth-child(2) p{
+   margin-top: 30px;
+    font-size: 18px;
+    color:#666;
+}
+.membership{margin-top:50px;}
+.membership img{
+    display: block;
+    width:90%;
+    margin:0 auto;
+}
+
+/*洗车美容*/
+.wash{
+    width:860px;
+    margin:0 auto;
+}
+.wash img{
+    width:100%;
+    height:auto;
+    display: block;
+}
+.wash_01{
+    margin-bottom:30px;
+}
+/*维修保养*/
+.weixiu{
+    width:833px;
+    margin:0 auto 0 auto;
+}
+/*油管家*/
+.oil_in{
+    width:850px;
+    margin:0 auto;
+    background: url("../img/oil_bg.png") no-repeat right top;
+    height:530px;
+}
+.oil_in p{
+    width:510px;
+    color:#222;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: justify;
+    margin-top:40px;
+}
+
+.oil_in p b{
+    font-size: 36px;
+    color:#71aef2;
+}
+
+/*钣金油漆*/
+.banjin .title{
+    width:125px;
+    line-height: 35px;
+    background:#71aef2;
+    border-radius: 18px;
+    color:#fff;
+    margin:0 auto;
+    font-size: 22px;
+}
+.banjin .row .pic img{
+    display: block;
+    width:126px;
+    margin:0 auto;
+}
+.banjin .row .txt h5{
+    font-size: 28px;
+    color:#71aef2;
+    text-align: left;
+    line-height: 50px;
+}
+.banjin .row .txt p{
+    font-size: 20px;
+    color:#222;
+}
+
+
+
+
+/*----------------------服务导航栏-----------------------------------*/
+.service_nav{
+    width:180px;
+    height: 716px;
+    background: #f8f8f8;
+    position: absolute;
+    top:40px;
+    left:-75px;
+    border-radius: 90px;
+    -moz-box-shadow:-2px 6px 10px #969696; -webkit-box-shadow:-2px 6px 10px #969696; box-shadow:-2px 6px 10px #969696;
+    box-sizing: border-box;
+    padding-top: 70px;
+}
+/*.service_nav .nav{*/
+    /*background:rgba(0,0,0,0)*/
+/*}*/
+.service_nav  ul{
+    list-style: none;
+    margin:0 auto;
+    padding:0;
+    width:120px;
+}
+.service_nav  ul li{
+    text-decoration: none;
+    border-bottom: 4px dashed #dadada;
+    width:120px;
+}
+.service_nav  ul li a{
+    text-decoration: none;
+}
+
+.service_nav  ul li a{
+    width:120px;text-align: center;
+    color:#444;
+    font-size: 26px;
+    line-height: 80px;
+    display: block;
+    font-weight: 500;
+}
+
+.service_nav  ul .current a{
+    color:#71aef2;
+}
+.service_nav  ul li a:hover{
+    color:#71aef2;
+}
+
+
+.m_nav{
+    display: none;
+}
+
+
+
+
+
+
+
+/*媒体查询*/
+
+
+@media screen and (max-width: 970px){
+
+    /*底部区域调整*/
+    .footer_nav ul li{
+        margin-left:0.1rem;
+    }
+    .footer_nav ul li a{
+        font-size: 0.26rem;
+        line-height:0.22rem;
+        margin-left: 0.06rem;
+        color:#384364;
+    }
+    .footer_nav ul li .last{
+        color:#ff8a00;
+    }
+    .beian{
+        color:#384364;text-align: center;font-size: 0.12rem;line-height: 0.3rem;margin:0;
+    }
+    /*通用*/
+    .service_nav{
+        display: none;
+    }
+    .banner {
+        height: 1rem;
+        background:#fff;
+        background-size: auto 100%;
+    }
+    .content {
+        width: 100%;
+        background: #fff;
+
+        margin: 0;
+        position: relative;
+        padding:0 0.2rem 0.5rem 0.2rem;
+    }
+    .membership img{
+        width:6rem;
+        height:auto;
+    }
+    .huiyuan_in {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .huiyuan_in .row{
+        margin:0;
+    }
+    .membership div{
+        margin-top:0.5rem;
+
+    }
+    .membership {
+        margin-top: 0;
+    }
+    .content_in h5 {
+        font-size: 0.42rem;
+        color: #444;
+        text-align: center;
+    }
+    .content_in h6 {
+        font-size: 0.16rem;
+        color: #888;
+        text-align: center;
+        margin-bottom: 0.3rem;
+    }
+    .huiyuan_in .row div:nth-child(2) p {
+        margin-top: 0.2rem;
+        font-size: 0.24rem;
+        color: #666;
+    }
+    .huiyuan_in .row div:nth-child(1) p {
+        text-align: center;
+        font-size: 0.32rem;
+        color: #222;
+    }
+    .wash {
+        width:100%;
+        margin: 0 auto;
+    }
+    .shangmen_in {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .shangmen_in p {
+        font-size: 0.26rem;
+        line-height: 0.32rem;
+        color: #444;
+    }
+    .shangmen_in span {
+        display: block;
+        width: 1.5rem;
+        text-align: center;
+        line-height: 0.4rem;
+        color: #fff;
+        background: #71aef2;
+        border-radius: 0.3rem;
+        margin: 0.5rem auto;
+        font-size: 0.28rem;
+    }
+    .shangmen_in p b {
+        font-size: 0.38rem;
+        color: #71aef2;
+        font-weight: bold;
+    }
+    .shangmen_in img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+    .weixiu {
+        width: 100%;
+        margin: 0 auto 0 auto;
+    }
+    .weixiu img{
+        display: block;
+        width:100%;
+        height:auto;
+    }
+    .oil_in {
+        width:100%;
+        margin: 0 auto;
+        background: #fff;
+        height: auto;
+    }
+    .oil_in p {
+        width:100%;
+        color: #222;
+        font-size: 0.26rem;
+        line-height: 0.32rem;
+        text-align: justify;
+        margin-top: 0.5rem;
+    }
+    .oil_in p b {
+        font-size: 0.36rem;
+        color: #71aef2;
+    }
+    .zijia {
+        width:100%;
+        margin: 0 auto;
+    }
+    .zijia .row{
+        margin:0;
+    }
+    .zijia .row h5 {
+        width: 122px;
+        border-radius: 16px;
+        line-height: 32px;
+        color: #fff;
+        background: #71aef2;
+        font-size: 22px;
+        text-align: center;
+        margin:0 auto;
+    }
+    .zijia .row p {
+        width: 122px;
+        color: #444;
+        font-size: 14px;
+        text-align: center;
+        line-height: 28px;
+        margin:0 auto;
+    }
+    .earth {
+        width:100%;
+        height: auto;
+        background: #fff;
+        padding-top: 0.5rem;
+        box-sizing: border-box;
+    }
+    .earth p{
+        font-size: 0.32rem;
+        text-align: left;
+    }
+    .zijia_bg {
+        margin-top: 0.5rem;
+        width:100%;
+    }
+    .banjin .row{
+        width:100%!important;
+    }
+    .banjin .row .txt h5 {
+        font-size: 0.32rem;
+        color: #71aef2;
+        text-align: left;
+        line-height: 0.5rem;
+    }
+    .banjin .row .txt p {
+        font-size:0.28rem;
+        color: #222;
+    }
+    .banjin .row .pic img {
+        display: block;
+         width: 3rem;
+        margin: 0 auto;
+    }
+    /*移动端内部导航*/
+    .m_nav{
+        width:100%;
+        padding:0.5rem 0.24rem 0.5rem 0.24rem;
+    display: block;
+    }
+    .m_nav ul{
+        list-style: none;
+        padding:0;
+        margin:0;
+    }
+    .m_nav ul li{
+        float:left;
+        font-size: 0.28rem;
+        width:1.5rem;
+        line-height: 0.45rem;
+        color:#71aef2;
+        border:1px solid #71aef2;
+        border-radius: 0.1rem;
+        margin-right:0.2rem;
+        margin-top:0.2rem;
+        text-align: center;
+    }
+    body{
+        background:#fff;
+    }
+    .m_nav ul .current{
+        color:#fff;
+        background:#71aef2;
+        border:1px solid #71aef2;
+    }
+    /*底部部分通用样式*/
+    .footer_icon img {
+        width: 1.2rem;
+        height: 1.2rem;
+        display: block;
+        margin: 0 auto;
+    }
+    .cooperation {
+        margin-top: 0.5rem;
+    }
+    .index_erwei {
+        margin:0.5rem auto;
+    }
+    .zijia_p{
+        font-size: 0.32rem!important;
+        line-height: 0.4rem!important;
+    }
+    .footer{
+        padding-top:0.25rem;
+    }
+    .footer_icon{
+        display: none;
+    }
+}

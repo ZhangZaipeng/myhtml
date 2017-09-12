@@ -1,0 +1,208 @@
+
+/*通用样式结束*/
+body{
+background:#f8f8f8;
+}
+/*banner*/
+.banner{
+    height:599px;
+    background: url("../img/contact_bg.png") no-repeat top center;
+    background-size: auto 100%;
+}
+
+/*内容区域*/
+.content{
+    width:1140px;
+    background:#fff;
+    margin:-215px auto 150px auto;
+    position: relative;
+    padding:100px 120px;
+
+}
+
+.content h5{
+    text-align: center;
+    color:#444;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.content h6{
+    text-align: center;
+    color:#888;
+    font-size: 16px;
+    margin-bottom:50px;
+}
+.content p{
+    font-size: 18px;
+    color:#444;
+    line-height: 50px;
+}
+.content .col-md-4 p{
+    text-align: center;
+}
+.contact_erwei{
+    position: relative;
+    margin-top:100px;
+    height:550px;  background:url("../img/advantage_bg.png") no-repeat left center;
+}
+.erwei_bg{
+    position:absolute;
+    width:354px;
+    height:454px;
+    right:150px;
+    top:25px;
+}
+.erwei_bg>img{
+    display: block;
+    width:354px;
+    height:454px;
+}
+.beian{
+    color:#384364;text-align: center;font-size: 14px;line-height: 30px;margin:0;
+}
+
+
+
+/*响应式*/
+
+
+
+
+
+@media screen and (max-width: 970px){
+    /*.navbar-header{*/
+        /*background:rgba(34,34,34,0.4);*/
+
+    /*}*/
+    /*.nav{*/
+        /*margin-left:0;*/
+        /*background:rgba(34,34,34,0.8);*/
+        /*border-radius:1px;*/
+        /*margin-top:-0.1rem;*/
+    /*}*/
+    /*.navbar-header{*/
+        /*background:rgba(34,34,34,0.4);*/
+
+    /*}*/
+    /*.navbar-collapse {*/
+        /*padding:0;*/
+        /*margin:0;*/
+    /*}*/
+    /*.navbar-nav>li:nth-child(5){*/
+        /*display: none;*/
+    /*}*/
+
+    /*.navbar-default .navbar-nav>li>a{*/
+        /*font-size: 0.36rem;*/
+        /*color:#fff;*/
+        /*line-height: 1.5rem;*/
+        /*text-align: left;*/
+        /*margin-left:0.5rem;*/
+    /*}*/
+    /*.navbar-default .navbar-nav>.active>a{*/
+        /*font-size: 0.45rem;*/
+        /*color:#fff;*/
+        /*background:none;*/
+        /*line-height: 1.5rem;*/
+        /*text-align: left;*/
+        /*margin-left:0.5rem;*/
+
+    /*}*/
+    /*底部区域调整*/
+    .footer_nav ul li{
+        margin-left:0.1rem;
+    }
+    .footer_nav ul li a{
+        font-size: 0.26rem;
+        line-height:0.22rem;
+        margin-left: 0.06rem;
+        color:#384364;
+    }
+    .footer_nav ul li .last{
+        color:#ff8a00;
+    }
+    .beian{
+        color:#384364;text-align: center;font-size: 0.12rem;line-height: 0.3rem;margin:0;
+    }
+    /*通用*/
+
+
+    .content {
+        width: 100%;
+        background: #fff;
+        margin: 0;
+        position: relative;
+        padding:0 0.2rem;
+        box-sizing: border-box;margin-bottom: 0.5rem;
+        padding-top:1rem;
+    }
+    .m_display{
+        display: none;
+    }
+    .content p {
+        font-size: 0.24rem;
+        color: #444;
+        line-height: 0.4rem;
+        text-align: center;
+    }
+    .content h5 {
+        text-align: center;
+        color: #444;
+        font-size: 0.42rem;
+        line-height: 0.6rem;
+    }
+    .content h6 {
+        text-align: center;
+        color: #888;
+        font-size: 0.16rem;
+        margin-bottom: 0.5rem;
+    }
+    .contact_erwei {
+        position: relative;
+        margin-top: 0.5rem;
+        height:auto;
+        background: #fff;
+    }
+    .erwei_bg {
+        position: static;
+        width:100%;
+        height:auto;
+    }
+    .erwei_bg>img {
+        display: block;
+        width:100%;
+        height:auto;
+    }
+    .banner {
+        height:1rem;
+        background: #fff;
+        background-size: auto 100%;
+    }
+    .row {
+        margin:0;
+    }
+    body{
+        background:#fff;
+
+    }
+    /*底部部分通用样式*/
+    .footer_icon img {
+        width: 1.2rem;
+        height: 1.2rem;
+        display: block;
+        margin: 0 auto;
+    }
+    .cooperation {
+        margin-top: 0.5rem;
+    }
+    .index_erwei {
+        margin:0.5rem auto;
+    }
+    .footer{
+        padding-top:0.25rem;
+    }
+    .footer_icon{
+        display: none;
+    }
+}
